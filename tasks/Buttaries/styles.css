@@ -1,0 +1,24 @@
+div {
+    border: 10px solid black;
+    width: 280px;
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+.low {
+    background: red;
+    width: 30%;
+    border: none;
+}
+
+.medium {
+    background: orange;
+    width: 65%;
+    border: none;
+}
+
+.high {
+    background: green;
+    width: 100%;
+    border: none;
+}
