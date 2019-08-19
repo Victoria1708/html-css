@@ -1,0 +1,45 @@
+#square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -120px;
+    margin-left: -120px;
+    background: deeppink;
+    width: 240px;
+    height: 240px;
+}
+
+#circle {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: orange;
+    top: 50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -70px;
+}
+
+#plus1 {
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -3px;
+}
+
+#plus2 {
+    position: absolute;
+    height: 40px;
+    width: 6px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -3px;
+
+}
