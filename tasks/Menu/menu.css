@@ -1,0 +1,27 @@
+ul{
+    border: 1px solid darkgray;
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    width: 150px;
+    padding-left: 0px;
+}
+li{
+    font-size: 16px;
+    color: dimgrey;
+    line-height: 30px;
+    list-style: none;
+    padding-left: 15px;
+}
+li:hover{
+    background-color: aliceblue;
+}
+#thin-menu-line {
+    border: none;
+    background-color: lightgray;
+    height: 1px;
+}
+#thick-menu-line{
+    border: none;
+    background-color: darkgray;
+    height: 1px;
+}
