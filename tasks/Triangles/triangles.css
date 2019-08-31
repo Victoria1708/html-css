@@ -1,0 +1,169 @@
+.figure-2 {
+  position: relative;
+  background: green;
+  width: 80px;
+  height: 40px;
+}
+.figure-2::before {
+  content: "";
+  position: absolute;
+  border: 15px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-left-color: green;
+  border-bottom-color: green;
+  margin-top: 40px;
+  transform: rotate(90deg);
+}
+.figure-2::after {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-left-color: green;
+  margin-left: 80px;
+}
+
+.figure-1 {
+  margin-top: 50px;
+  position: relative;
+  background: darkblue;
+  width: 100px;
+  height: 40px;
+}
+.figure-1::before {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-top-color: darkblue;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.figure-3 {
+  margin-top: 50px;
+  position: relative;
+  background: orangered;
+  width: 100px;
+  height: 40px;
+}
+.figure-3::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-left-color: white;
+}
+.figure-3::after {
+  content: "";
+  position: absolute;
+  border: 20px solid white;
+  width: 0px;
+  height: 0px;
+  border-left-color: orangered;
+  margin-left: 100px;
+}
+
+.figure-4 {
+  margin-top: 50px;
+  position: relative;
+  background: darkblue;
+  width: 40px;
+  height: 100px;
+}
+.figure-4::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-bottom-color: darkblue;
+  bottom: 100px;
+}
+.figure-4::after {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-bottom-color: white;
+  top: 60px;
+}
+
+.figure-5 {
+  margin-top: 50px;
+  position: relative;
+  background: yellow;
+  width: 100px;
+  height: 40px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.figure-5::after {
+  content: "";
+  position: absolute;
+  border: 20px solid white;
+  width: 0px;
+  height: 0px;
+  border-left-color: yellow;
+  margin-left: 100px;
+}
+
+.figure-6 {
+  margin-top: 50px;
+  position: relative;
+  background: darkblue;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.figure-6::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 25px solid transparent;
+  border-right: 25px solid red;
+  top: 25%;
+}
+
+.figure-7 {
+  margin-top: 50px;
+  position: relative;
+  background: blue;
+  width: 140px;
+  height: 60px;
+}
+.figure-7::before {
+  content: "";
+  position: absolute;
+  border: 13px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-top-color: white;
+  border-right-color: white;
+  margin-left: 114px;
+}
+
+.figure-8 {
+  margin-top: 50px;
+  position: relative;
+  background: brown;
+  width: 100px;
+  height: 40px;
+}
+.figure-8::before {
+  content: "";
+  position: absolute;
+  border: 50px solid transparent;
+  border-top: 20px solid brown;
+  width: 0px;
+  height: 0px;
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=triangles.css.map */

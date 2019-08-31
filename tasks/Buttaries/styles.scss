@@ -1,0 +1,36 @@
+.buttery {
+    position: relative;
+    border: 10px solid black;
+    width: 280px;
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+.payload {
+    height: 100%;
+}
+
+.low {
+    background: red;
+    width: 30%;
+}
+
+.medium {
+    background: orange;
+    width: 60%;
+}
+
+.high {
+    background: green;
+    width: 100%;
+}
+
+.plus {
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background-color: black;
+    right: -20px;
+    top: 50%;
+    margin-top: -20px;
+}

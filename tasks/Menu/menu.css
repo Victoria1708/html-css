@@ -1,27 +1,26 @@
 .menu {
-    border: 1px solid darkgray;
-    background-color: white;
-    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
-    width: 150px;
-    padding-left: 0px;
+  border: 1px solid darkgray;
+  background-color: white;
+  box-shadow: 0 0 10px 5px #dddddd;
+  width: 150px;
+  padding-left: 0;
 }
 
 li {
-    font-size: 16px;
-    color: dimgrey;
-    line-height: 30px;
-    list-style: none;
-    padding-left: 15px;
+  font-size: 16px;
+  color: dimgrey;
+  line-height: 30px;
+  list-style: none;
+  padding-left: 15px;
 }
-
 li:hover {
-    background-color: aliceblue;
+  background-color: aliceblue;
 }
 
 .separator {
-    border: none;
-    background-color: lightgray;
-    height: 1px;
+  border: none;
+  background-color: lightgray;
+  height: 1px;
 }
 
-
+/*# sourceMappingURL=menu.css.map */
