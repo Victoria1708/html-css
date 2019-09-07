@@ -1,36 +1,41 @@
-.buttery {
-    position: relative;
-    border: 10px solid black;
-    width: 280px;
-    height: 90px;
-    margin-bottom: 30px;
+/*
++
+~
+>
+<space>
+:first-child
+:lsat-child
+:nth-child
+*/
+body > div {
+  position: relative;
+  border: 10px solid black;
+  width: 280px;
+  height: 90px;
+  margin-bottom: 30px;
+}
+body > div div:first-child {
+  height: 100%;
+}
+body > div div:last-child {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background-color: black;
+  right: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
+body div:first-child div:first-child {
+  background: red;
+  width: 30%;
+}
+body div:nth-child(2) div:first-child {
+  background: orange;
+  width: 60%;
+}
+body div:last-child div:first-child {
+  background: green;
 }
 
-.payload {
-    height: 100%;
-}
-
-.low {
-    background: red;
-    width: 30%;
-}
-
-.medium {
-    background: orange;
-    width: 60%;
-}
-
-.high {
-    background: green;
-    width: 100%;
-}
-
-.plus {
-    position: absolute;
-    width: 10px;
-    height: 40px;
-    background-color: black;
-    right: -20px;
-    top: 50%;
-    margin-top: -20px;
-}
+/*# sourceMappingURL=styles.css.map */
