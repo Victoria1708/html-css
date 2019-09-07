@@ -3,7 +3,7 @@
   background-color: white;
   box-shadow: 0 0 10px 5px #dddddd;
   width: 150px;
-  padding-left: 0;
+  padding: 0;
 }
 
 li {
@@ -11,9 +11,11 @@ li {
   color: dimgrey;
   line-height: 30px;
   list-style: none;
-  padding-left: 15px;
+  padding: 0 12px;
+  white-space: nowrap;
 }
 li:hover {
+  cursor: pointer;
   background-color: aliceblue;
 }
 

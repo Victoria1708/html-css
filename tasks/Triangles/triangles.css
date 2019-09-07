@@ -1,3 +1,10 @@
+.triangle-pseudo-elem, .figure-2::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+}
+
 .figure-2 {
   position: relative;
   background: green;
@@ -5,22 +12,17 @@
   height: 40px;
 }
 .figure-2::before {
-  content: "";
   position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
   border: 15px solid transparent;
-  width: 0px;
-  height: 0px;
   border-left-color: green;
-  border-bottom-color: green;
+  border-top-color: green;
   margin-top: 40px;
-  transform: rotate(90deg);
 }
 .figure-2::after {
-  content: "";
-  position: absolute;
   border: 20px solid transparent;
-  width: 0px;
-  height: 0px;
   border-left-color: green;
   margin-left: 80px;
 }
@@ -36,8 +38,8 @@
   content: "";
   position: absolute;
   border: 10px solid transparent;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top-color: darkblue;
   margin-top: 40px;
   margin-left: 40px;
@@ -54,16 +56,16 @@
   content: "";
   position: absolute;
   border: 20px solid transparent;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-left-color: white;
 }
 .figure-3::after {
   content: "";
   position: absolute;
   border: 20px solid white;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-left-color: orangered;
   margin-left: 100px;
 }
@@ -79,8 +81,8 @@
   content: "";
   position: absolute;
   border: 20px solid transparent;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-bottom-color: darkblue;
   bottom: 100px;
 }
@@ -88,8 +90,8 @@
   content: "";
   position: absolute;
   border: 20px solid transparent;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-bottom-color: white;
   top: 60px;
 }
@@ -107,8 +109,8 @@
   content: "";
   position: absolute;
   border: 20px solid white;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-left-color: yellow;
   margin-left: 100px;
 }
@@ -124,8 +126,8 @@
 .figure-6::before {
   content: "";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border: 25px solid transparent;
   border-right: 25px solid red;
   top: 25%;
@@ -142,8 +144,8 @@
   content: "";
   position: absolute;
   border: 13px solid transparent;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top-color: white;
   border-right-color: white;
   margin-left: 114px;
@@ -161,8 +163,8 @@
   position: absolute;
   border: 50px solid transparent;
   border-top: 20px solid brown;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   margin-top: 40px;
 }
 

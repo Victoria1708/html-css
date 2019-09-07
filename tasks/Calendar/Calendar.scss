@@ -1,9 +1,44 @@
 @mixin calendar-cell($color) {
-  width: 55px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: $color;
   float: left;
   text-align: center;
+  line-height: 40px;
+}
+
+@function opposite-direction($directions) {
+  $opposite-directions: ();
+  $direction-map: (
+          'top': 'bottom',
+          'right': 'left',
+          'bottom': 'top',
+          'left': 'right',
+          'center': 'center',
+          'ltr': 'rtl',
+          'rtl': 'ltr'
+  );
+
+  @each $direction in $directions {
+    $direction: to-lower-case($direction);
+
+    @if map-has-key($direction-map, $direction) {
+      $opposite-directions: append($opposite-directions, unquote(map-get($direction-map, $direction)));
+    } @else {
+      @warn "No opposite direction can be found for `#{$direction}`. Direction omitted.";
+    }
+  }
+
+  @return $opposite-directions;
+}
+
+@mixin triangle($direction, $color) {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  cursor: pointer;
+  border-#{opposite-direction($direction)}-color: $color;
 }
 
 .archive {
@@ -14,7 +49,7 @@
   text-align: center;
   padding-top: 2px;
   height: 30px;
-  width: 385px;
+  width: 280px;
   vertical-align: middle;
 }
 
@@ -24,38 +59,19 @@
   background: black;
   text-align: center;
   color: white;
-  width: 385px;
+  width: 280px;
   height: 25px;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border: 12px solid transparent;
-    border-right-color: green;
-    margin-left: -96px;
-    margin-top: -3px;
-  }
+.left-arrow {
+  @include triangle(left, green);
+  bottom: 4px;
+}
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border: 12px solid transparent;
-    border-left-color: green;
-    margin-left: 20%;
-    margin-top: -3px;
-  }
-
-  &:hover::before {
-    cursor: pointer;
-  }
-
-  &:hover::after {
-    cursor: pointer;
-  }
+.right-arrow {
+  @include triangle(right, green);
+  right: 0;
+  bottom: 4px;
 }
 
 .day {
@@ -73,7 +89,7 @@
   }
 }
 
-.september-date {
+.active {
   @include calendar-cell(lavender);
 
   &:nth-last-of-type(-n+2) {
@@ -86,8 +102,12 @@
   }
 }
 
-.row::after {
-  content: '';
-  display: block;
-  clear: both;
+.calendar-dates {
+  width: 280px;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 }

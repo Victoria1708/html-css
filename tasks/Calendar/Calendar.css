@@ -6,7 +6,7 @@
   text-align: center;
   padding-top: 2px;
   height: 30px;
-  width: 385px;
+  width: 280px;
   vertical-align: middle;
 }
 
@@ -16,74 +16,75 @@
   background: black;
   text-align: center;
   color: white;
-  width: 385px;
+  width: 280px;
   height: 25px;
 }
-.month::before {
+
+.left-arrow {
   position: absolute;
-  content: "";
   width: 0;
   height: 0;
   border: 12px solid transparent;
+  cursor: pointer;
   border-right-color: green;
-  margin-left: -96px;
-  margin-top: -3px;
+  bottom: 4px;
 }
-.month::after {
+
+.right-arrow {
   position: absolute;
-  content: "";
   width: 0;
   height: 0;
   border: 12px solid transparent;
+  cursor: pointer;
   border-left-color: green;
-  margin-left: 20%;
-  margin-top: -3px;
-}
-.month:hover::before {
-  cursor: pointer;
-}
-.month:hover::after {
-  cursor: pointer;
+  right: 0;
+  bottom: 4px;
 }
 
 .day {
   padding-top: 10px;
-  width: 55px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: lavender;
   float: left;
   text-align: center;
+  line-height: 40px;
 }
 
 .inactive {
   color: grey;
-  width: 55px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: lavender;
   float: left;
   text-align: center;
+  line-height: 40px;
 }
 .inactive:hover {
   cursor: pointer;
   background-color: aliceblue;
 }
 
-.september-date {
-  width: 55px;
-  height: 30px;
+.active {
+  width: 40px;
+  height: 40px;
   background-color: lavender;
   float: left;
   text-align: center;
+  line-height: 40px;
 }
-.september-date:nth-last-of-type(-n+2) {
+.active:nth-last-of-type(-n+2) {
   color: red;
 }
-.september-date:hover {
+.active:hover {
   cursor: pointer;
   background-color: aliceblue;
 }
 
-.row::after {
+.calendar-dates {
+  width: 280px;
+}
+.calendar-dates::after {
   content: "";
   display: block;
   clear: both;
