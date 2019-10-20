@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://kit.fontawesome.com/0295231d88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sass/main.css" type="text/css">
+</head>
+<body>
+<nav class="main-nav">
+    <div class="container">
+        <ul class="nav-menu">
+            <li><a href="#"><i class="fa fa-home home-icon" aria-hidden="true"></i></a></li>
+            <li><a href="#">Presno9st</a></li>
+            <li><a href="#">Bezpecnost</a></li>
+            <li><a href="#">Zaruka</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+        <form class="search-form" action="/" method="get">
+            <i class="fa fa-search search-icon" aria-hidden="true"></i>
+            <input id="search-field" type="text" name="search" placeholder="eg.  trampolina 8ft">
+        </form>
+    </div>
+</nav>
+<header>
+    <img class="header__image" src="assets/images/header/header-img_fullsize.jpg">
+</header>
+<section class="product_slider_section">
+    <div class="container">
+        <div class="product_slider">
+            <div class="product_slider__arrow-left"></div>
+            <div class="product_slider__arrow-right"></div>
+            <h1 class="product_slider__header">Wybierz trampoline</h1>
+            <div class="product_slider__slides">
+                <div class="product_slider__item">
+                    <img class="product_slider__photo" src="assets/images/trampoliny/slider/Flimooo_zewnetrzne.jpg">
+                    <p class="product_slider__title">Trampolina-Hop-sport Wewnetrzne</p>
+                    <ul class="product_slider__description">
+                        <li>6ft</li>
+                        <li>8ft</li>
+                        <li>12ft</li>
+                    </ul>
+                </div>
+                <div class="product_slider__item">
+                    <img class="product_slider__photo" src="assets/images/trampoliny/slider/Hop-sport-wewnetrzne.jpg">
+                    <p class="product_slider__title">Trampolina-Flimboo</p>
+                    <ul class="product_slider__description">
+                        <li>6ft</li>
+                        <li>8ft</li>
+                        <li>12ft</li>
+                    </ul>
+                </div>
+                <div *ngFor="let item of items" class="product_slider__item">
+                    <img class="product_slider__photo" src="assets/images/trampoliny/slider/hop-sport-zwnetrzen.jpg">
+                    <p class="product_slider__title">Trampolina-Hop-sport</p>
+                    <ul class="product_slider__description">
+                        <li>6ft</li>
+                        <li>8ft</li>
+                        <li>12ft</li>
+                    </ul>
+                </div>
+                <div class="product_slider__item">
+                    <img class="product_slider__photo" src="assets/images/trampoliny/slider/Hop-sport-wewnetrzne.jpg">
+                    <p class="product_slider__title">Trampolina-Hop-sport</p>
+                    <ul class="product_slider__description">
+                        <li>6ft</li>
+                        <li>8ft</li>
+                        <li>12ft</li>
+                    </ul>
+                </div>
+                <div class="product_slider__item">
+                    <img class="product_slider__photo" src="assets/images/trampoliny/slider/hop-sport-zwnetrzen.jpg">
+                    <p class="product_slider__title">Trampolina-Hop-sport</p>
+                    <ul class="product_slider__description">
+                        <li>6ft</li>
+                        <li>8ft</li>
+                        <li>12ft</li>
+                        <li>22ft</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<main class="main-content">
+    <div class="container">
+        <div class="banners">
+            <div class="banners__row">
+                <div class="banners__small_item">
+                    <img class="banners__small_item_image" src="assets/images/banners/banner_choice%20.jpg">
+                </div>
+                <div class="banners__small_item">
+                    <img class="banners__small_item_image" src="assets/images/banners/banner_manual.jpg">
+                </div>
+                <div class="banners__small_item">
+                    <img class="banners__small_item_image" src="assets/images/banners/banner_opinions.jpg">
+                </div>
+            </div>
+            <div class="banners__row">
+                <div class="banners__slider">
+                    <img class="banners__items_long_item_image" src="assets/images/banners/baner_big.jpg">
+                </div>
+                <div class="banners__certificate_item">
+                    <img class="banners__certificate_item_image" src="assets/images/banners/certificates.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="trampolines_description">
+            <div class="main-section-row">
+                <div class="description-section clearfix">
+                    <div class="description-section__image">
+                        <img class="size_560" src="assets/images/trampoliny/description/tramp-01.jpg">
+                    </div>
+                    <div class="description-section__content">
+                        <h1 class="trampolines_descriptions__header">Trampolina Hon-Sport 10ft (305 cm) s vnitrini
+                            ochrannou
+                            siti
+                        </h1>
+                        <span class="trampolines_descriptions_first_description__text">
+                            <b>Wszystkie elementy konstrukcyjne naszej trampoliny wykonane są z wysokiej </b>jakości stali
+                            hartowanej,
+                            ocynkowanej i galwanizowanej, co zapewnia ich trwałość przez minimum kilka sezonów.
+                            Ocynkowane sprężyny trampoliny okryte są dwuwarstwowym materiałem wypełnionym gąbką,
+                            który precyzyjnie osłania je i chroni. Mata do odbić wykonana jest z polipropylenu – materiału
+                            odpornego nie tylko na duże obciążenia, ale także na wilgoć, promieniowanie słoneczne oraz inne
+                            warunki atmosferyczne.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-section-row">
+                <div class="description-section clearfix">
+                    <div class="description-section__image">
+                        <img src="assets/images/trampoliny/description/tramp-02.jpg">
+                    </div>
+                    <div class="description-section__content">
+                        <h1 class="trampolines_descriptions__header">Podivejte se proc je nase trampolina tou nejlepsi
+                            na trhu
+                            neijlepsi na trhu:
+                        </h1>
+                        <p class="trampolines_descriptions_second_description__text">
+                            <b>Wszystkie elementy konstrukcyjne naszej</b>
+                        <p>Jakości stali hartowanej,ocynkowanej i galwanizowanej, co zapewnia ich trwałość przez
+                            minimum kilka sezonów.</p>
+                        <b>Ocynkowane sprężyny trampoliny </b>
+                        <p>Mata do odbić wykonana jest z polipropylenu – materiału
+                            odpornego nie tylko na duże obciążenia, ale także na wilgoć, promieniowanie słoneczne oraz
+                            inne
+                            warunki atmosferyczne.</p>
+                        <b>Mata do odbić wykonana jest z polipropylenu – materiału</b>
+                        <p>Odpornego nie tylko na duże obciążenia, ale także na wilgoć, promieniowanie słoneczne oraz
+                            inne
+                            warunki atmosferyczne.
+                            Mata do odbić wykonana jest z polipropylenu – materiału
+                            odpornego nie tylko na duże obciążenia, ale także na wilgoć, promieniowanie słoneczne oraz
+                            inne
+                            warunki atmosferyczne.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-section-row">
+                <div class="image-row-container clearfix">
+                    <img class="col-3" src="assets/images/trampoliny/description/tramp-04.jpg">
+                    <img class="col-1" src="assets/images/trampoliny/description/tramp-03.jpg">
+                </div>
+            </div>
+            <div class="main-section-row">
+                <div class="image-row-container clearfix">
+                    <img class="col-2" src="assets/images/trampoliny/description/tramp-07.jpg">
+                    <img class="col-2" src="assets/images/trampoliny/description/tramp-05.jpg">
+                </div>
+            </div>
+            <div class="main-section-row">
+                <div class="image-row-container clearfix">
+                    <img class="col-3" src="assets/images/trampoliny/description/tramp-08.jpg">
+                    <img class="col-1" src="assets/images/trampoliny/description/tramp-06.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer-section">
+    <div class="footer-section-line"></div>
+    <div class="container">
+        <div class="footer">
+            <div class="footer__copyright-text">
+                <span>©2015 Bezpieczna trampolina</span>
+                <div class="footer__languages-options">
+                    <span>Zmien jezyk</span>
+                    <img src="assets/images/flags/cz_flag.jpg">
+                    <img src="assets/images/flags/sk_flag.jpg">
+                </div>
+            </div>
+            <div class="footer__thin-line"></div>
+            <ul class="footer__navigation">
+                <li><a href="#">Trampoliny</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">O nas</a></li>
+                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

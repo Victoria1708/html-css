@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        .parent {
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            font-size: 0;
+        }
+
+        .days-container .block:last-child {
+            margin-right: 0;
+        }
+
+        .block {
+            display: inline-block;
+            background-color: green;
+            width: 80px;
+            height: 80px;
+            font-size: 18px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <div class="parent">
+        <div class="days-container">
+            <div class="block">ANV</div>
+            <div class="block">ANV</div>
+            <div class="block">ANV</div>
+            <div class="block">ANV</div>
+            <div class="block">ANV</div>
+            <div class="block">ANV</div>
+        </div>
+        <div class="days-container">
+            <div class="block">ANV</div>
+            <div class="block">ANV</div>
+            <div class="block">ANV</div>
+            <div class="block">ANV</div>
+            <div class="block">ANV</div>
+            <div class="block">ANV</div>
+        </div>
+    </div>
 </body>
 </html>

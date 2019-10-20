@@ -2,9 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .parent {
+            width: 350px;
+            border: 1px solid black;
+        }
+
+        .days-container:not(:first-child) {
+            margin-top: 10px;
+        }
+
+        .days-container::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .days-container :last-child {
+            margin-right: 0;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            background-color: green;
+            float: left;
+        }
+
+    </style>
 </head>
 <body>
-$END$
+<div class="parent">
+    <div class="days-container">
+        <div class="box">AVATAR</div>
+        <div class="box">AVATAR</div>
+        <div class="box">AVATAR</div>
+        <div class="box">AVATAR</div>
+    </div>
+    <div class="days-container">
+        <div class="box">AVATAR</div>
+        <div class="box">AVATAR</div>
+        <div class="box">AVATAR</div>
+        <div class="box">AVATAR</div>
+    </div>
+</div>
 </body>
 </html>
