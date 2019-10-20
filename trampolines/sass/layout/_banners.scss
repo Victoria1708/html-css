@@ -1,0 +1,49 @@
+@import "../variables";
+@import "../abstracts/color";
+
+$banners-gap: 10px;
+
+.banners {
+  font-size: 0;
+  background-color: $color-main-background;
+
+  .banners__row {
+    padding-top: 1rem;
+
+    .banners__small_item {
+      display: inline-block;
+      cursor: pointer;
+      width: (($container-width - $banners-gap * 2) / 3);
+      margin-right: $banners-gap;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .banners__small_item_image {
+        width: 100%;
+      }
+    }
+
+    .banners__slider {
+      display: inline-block;
+      cursor: pointer;
+      width: 80%;
+
+      .banners__items_long_item_image {
+        width: 100%;
+      }
+    }
+
+    .banners__certificate_item {
+      display: inline-block;
+      cursor: pointer;
+      width: 20%;
+      text-align: center;
+
+      .banners__certificate_item_image {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}

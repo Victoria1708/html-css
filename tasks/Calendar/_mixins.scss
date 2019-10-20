@@ -1,0 +1,29 @@
+@mixin calendar-cell($color) {
+  $cellSize: 40px;
+  width: $cellSize;
+  height: $cellSize;
+  background-color: $color;
+  float: left;
+  text-align: center;
+  line-height: $cellSize;
+}
+
+@function opposite-direction($direction) {
+  $direction-map: (
+          'top': 'bottom',
+          'right': 'left',
+          'bottom': 'top',
+          'left': 'right'
+  );
+  @return map-get($direction-map, $direction);
+}
+
+@mixin triangle($direction, $color, $size) {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: ($size / 2) solid transparent;
+  cursor: pointer;
+  $border-side: opposite-direction($direction);
+  border-#{$border-side}-color: $color;
+}

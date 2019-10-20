@@ -1,4 +1,4 @@
-.archive {
+.calendar .title {
   display: table-cell;
   letter-spacing: 3px;
   background: green;
@@ -9,8 +9,7 @@
   width: 280px;
   vertical-align: middle;
 }
-
-.month {
+.calendar .month-title {
   position: relative;
   padding-top: 8px;
   background: black;
@@ -19,29 +18,26 @@
   width: 280px;
   height: 25px;
 }
-
-.left-arrow {
+.calendar .left-arrow {
   position: absolute;
   width: 0;
   height: 0;
-  border: 12px solid transparent;
+  border: 6px solid transparent;
   cursor: pointer;
   border-right-color: green;
   bottom: 4px;
 }
-
-.right-arrow {
+.calendar .right-arrow {
   position: absolute;
   width: 0;
   height: 0;
-  border: 12px solid transparent;
+  border: 6px solid transparent;
   cursor: pointer;
   border-left-color: green;
   right: 0;
   bottom: 4px;
 }
-
-.day {
+.calendar .day-name {
   padding-top: 10px;
   width: 40px;
   height: 40px;
@@ -50,8 +46,7 @@
   text-align: center;
   line-height: 40px;
 }
-
-.inactive {
+.calendar .inactive {
   color: grey;
   width: 40px;
   height: 40px;
@@ -60,12 +55,11 @@
   text-align: center;
   line-height: 40px;
 }
-.inactive:hover {
+.calendar .inactive:hover {
   cursor: pointer;
   background-color: aliceblue;
 }
-
-.active {
+.calendar .active {
   width: 40px;
   height: 40px;
   background-color: lavender;
@@ -73,21 +67,20 @@
   text-align: center;
   line-height: 40px;
 }
-.active:nth-last-of-type(-n+2) {
+.calendar .active:nth-last-of-type(-n + 2) {
   color: red;
 }
-.active:hover {
+.calendar .active:hover {
   cursor: pointer;
   background-color: aliceblue;
 }
-
-.calendar-dates {
+.calendar .calendar-dates {
   width: 280px;
 }
-.calendar-dates::after {
+.calendar .calendar-dates::after {
   content: "";
   display: block;
   clear: both;
 }
 
-/*# sourceMappingURL=Calendar.css.map */
+/*# sourceMappingURL=calendar.css.map */

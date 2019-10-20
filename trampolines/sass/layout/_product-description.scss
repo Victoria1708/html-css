@@ -1,0 +1,44 @@
+@import "../variables";
+@import "../abstracts/color";
+
+.size_560 {
+  width: 560px;
+}
+
+.trampolines_description {
+  margin-top: 1rem;
+  box-sizing: border-box;
+  padding: $padding-default;
+  background-color: $color-lightest;
+  border-radius: $border-radius-default;
+
+  .main-section-row:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .description-section {
+
+    .description-section__content {
+      font-size: 2.5rem;
+      color: $color-text-light;
+      display: inline;
+      padding-right: 1rem;
+      text-align: justify;
+
+      .trampolines_descriptions__header {
+        font-size: 3rem;
+        color: $color-text-dark;
+      }
+    }
+
+    .description-section__image {
+      float: right;
+      margin-left: 2rem;
+    }
+  }
+}
+
+.image-row-container {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}

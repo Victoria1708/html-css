@@ -1,0 +1,74 @@
+@import "mixins";
+
+.calendar {
+  .title {
+    display: table-cell;
+    letter-spacing: 3px;
+    background: green;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    height: 30px;
+    width: 280px;
+    vertical-align: middle;
+  }
+
+  .month-title {
+    position: relative;
+    padding-top: 8px;
+    background: black;
+    text-align: center;
+    color: white;
+    width: 280px;
+    height: 25px;
+  }
+
+  .left-arrow {
+    @include triangle('left', green, 12px);
+    bottom: 4px;
+  }
+
+  .right-arrow {
+    @include triangle('right', green, 12px);
+    right: 0;
+    bottom: 4px;
+  }
+
+  .day-name {
+    padding-top: 10px;
+    @include calendar-cell(lavender);
+  }
+
+  .inactive {
+    color: grey;
+    @include calendar-cell(lavender);
+
+    &:hover {
+      cursor: pointer;
+      background-color: aliceblue;
+    }
+  }
+
+  .active {
+    @include calendar-cell(lavender);
+
+    &:nth-last-of-type(-n + 2) {
+      color: red;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: aliceblue;
+    }
+  }
+
+  .calendar-dates {
+    width: 280px;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+}
